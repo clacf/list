@@ -1,1 +1,25 @@
-cG9ydDogNzg5MA0Kc29ja3MtcG9ydDogNzg5MQ0KYWxsb3ctbGFuOiB0cnVlDQptb2RlOiBSdWxlDQpsb2ctbGV2ZWw6IGluZm8NCmV4dGVybmFsLWNvbnRyb2xsZXI6IDEyNy4wLjAuMTo5MDkwDQpwcm94aWVzOg0KLSBuYW1lOiAiaHR0cCINCiAgdHlwZTogaHR0cA0KICBzZXJ2ZXI6IDE3My44Mi4xMjAuMTUyDQogIHBvcnQ6IDMxMjgNCiAgdXNlcm5hbWU6IHB4dXNlcg0KICBwYXNzd29yZDogMEteeDVoMFUNCi0gbmFtZTogImh0dHBfYmFjayINCiAgdHlwZTogaHR0cA0KICBzZXJ2ZXI6IDE3My44Mi4xMjAuMTUyDQogIHBvcnQ6IDUwMjcNCnByb3h5LWdyb3VwczoNCiAgLSBuYW1lOiBQcm94aWVzDQogICAgdHlwZTogc2VsZWN0DQogICAgcHJveGllczoNCiAgICAgIC0gaHR0cA0KICAgICAgLSBodHRwX2JhY2sNCnJ1bGVzOg0KIC0gTUFUQ0gsUHJveGllcw==
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+- name: "http"
+  type: http
+  server: 173.82.120.152
+  port: 3128
+  username: pxuser
+  password: 0K^x5h0U
+- name: "http_back"
+  type: http
+  server: 173.82.120.152
+  port: 5027
+proxy-groups:
+  - name: Proxies
+    type: select
+    proxies:
+      - http
+      - http_back
+rules:
+ - MATCH,Proxies
