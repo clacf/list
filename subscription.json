@@ -1,0 +1,274 @@
+{
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "sub1-vless-120914",
+      "server": "www.120914.xyz",
+      "server_port": 33602,
+      "uuid": "9a5e1e7d-6a05-480d-8d1c-ad6f0c5e0321",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.120914.xyz",
+        "reality": {
+          "enabled": true,
+          "public_key": "WDhTEpwco2Zp3Uumtu-8-hZmldBrullPU70Xbw9HbVE",
+          "short_id": "6ba85179e30d4fc2"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "sub1-tuic-120914",
+      "server": "www.120914.xyz",
+      "server_port": 37819,
+      "uuid": "9a5e1e7d-6a05-480d-8d1c-ad6f0c5e0321",
+      "password": "9a5e1e7d-6a05-480d-8d1c-ad6f0c5e0321",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "tls": {
+        "enabled": true,
+        "server_name": "9a5e1e7d-singbox_tuic",
+        "disable_sni": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "sub1-tuic-pro-19931108",
+      "server": "pro.19931108.xyz",
+      "server_port": 31182,
+      "uuid": "3f83b4b2-3d0e-427d-9be3-82c963ef47ba",
+      "password": "3f83b4b2-3d0e-427d-9be3-82c963ef47ba",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "tls": {
+        "enabled": true,
+        "server_name": "3f83b4b2-singbox_tuic",
+        "disable_sni": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "sub1-vless-pro-19931108",
+      "server": "pro.19931108.xyz",
+      "server_port": 11286,
+      "uuid": "3f83b4b2-3d0e-427d-9be3-82c963ef47ba",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pro.19931108.xyz",
+        "reality": {
+          "enabled": true,
+          "public_key": "8dAJlxQJCP83qUDanopBYjiQyLt-MDBD8KbUAoXfKyg",
+          "short_id": "6ba85179e30d4fc2"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-shuanghu",
+      "server": "199311081.xyz",
+      "server_port": 26771,
+      "uuid": "787d18bd-ef6e-46fc-9a27-d8a6d41c1d72",
+      "password": "tiLascHAtaEYS7w5",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-zichen",
+      "server": "199311081.xyz",
+      "server_port": 52403,
+      "uuid": "75746597-6248-4429-adf8-e9332857f9d4",
+      "password": "b3QhC2/XkSM0vRx/",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-pucheng",
+      "server": "199311081.xyz",
+      "server_port": 6652,
+      "uuid": "ecc31133-96b7-42d2-b8cb-b57e6c0179c8",
+      "password": "W68tKqe/sYiEhj80",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-zhongkexingcheng",
+      "server": "199311081.xyz",
+      "server_port": 25714,
+      "uuid": "c7c5b7be-434f-4096-96d4-85d8c2130edc",
+      "password": "W3F7cgSrQHskWfz0",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-nosbell",
+      "server": "199311081.xyz",
+      "server_port": 53895,
+      "uuid": "46e925d8-4dce-42a4-8798-fa44693ad2d6",
+      "password": "CxqNorkk9yLFUM1d",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-180-private",
+      "server": "199311081.xyz",
+      "server_port": 33059,
+      "uuid": "835591dd-db66-4600-ac50-450accd1a1a5",
+      "password": "eiyNXXF8+ruA6LRo",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-zhongnuo",
+      "server": "199311081.xyz",
+      "server_port": 29465,
+      "uuid": "bcdd460f-359f-433c-a3ca-a78f12125574",
+      "password": "hYhcY0pkgS36xko5",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-chenjie",
+      "server": "199311081.xyz",
+      "server_port": 15413,
+      "uuid": "3806d545-4fa9-4a89-a3b5-179fc667ac1d",
+      "password": "w7hkIlBi97I4qS5K",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-hengmei",
+      "server": "199311081.xyz",
+      "server_port": 18461,
+      "uuid": "17bedb45-5a13-499f-ace1-b20f36098877",
+      "password": "4lZHghDpt1iM1fjy",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "project-wenyuanzhixing",
+      "server": "199311081.xyz",
+      "server_port": 19437,
+      "uuid": "39690591-40e2-4eb7-bbaf-170ca46bbd1f",
+      "password": "TVvq8rhtjwjpkloQ",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "199311081.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3",
+          "spdy/3.1"
+        ]
+      }
+    }
+  ]
+}
